@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <link rel="icon" href="https://cdn.discordapp.com/icons/775331746371731479/9438c7d52a72458fbe9f19d3796d7e92.png" type="image/png">
+    <title>StacklyCode Challenge | Polibov</title>
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <div class="logo-container">
+            <a href="https://stacklycode.com/" target="_blank">
+                <img src="src/img/LogoStackly.svg">
+            </a>
+        </div>
+        <h2>Challenge Quotes</h2>
+    </nav>
+
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+  </label>
+    </div>
+
+    <div class="search-container">
+        <form id="form" class="main-form">
+            <input id="input" placeholder="Search some quote, topic or author's">
+            <button type="submit">Search</button>
+        </form>
+
+        <button id="random" class="random-button">Random <img src="./src/img/random.svg"> </button>
+
+    </div>
+    <form id="form-options" class="search-options">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Search options
+          </button>
+                </h2>
+
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <div class="input-radio">
+                            <h4>Search by...</h4>
+                            <select id="select-search" class="form-select" aria-label="Default select example">
+                                <option value="all" selected>Search all</option>
+                                <option value="query">Content of the quote</option>
+                                <option value="author">Author</option>
+                                <option value="genre">Topic</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="limit-input">
+                        <h4>Limit of search</h4>
+                        <select id="select-limit" class="form-select" aria-label="Default select example">
+                            <option value="12" selected>Default (12)</option>
+                            <option value="6">6</option>
+                            <option value="18">18</option>
+                            <option value="24">24</option>
+                            <option value="1000">Without limit</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+    </form>
+
+    </div>
+    <div id="results" class="results">
+
+    </div>
+
+    <footer><a href="https://github.com/SantiagoVA" target="_blank">Created by Santiago Vásquez (<b>Polibov</b>)</a></footer>
+    <script type="module" src="./src/js/app.js"></script>
+    <script type="module" src="./src/js/DOM/changeTheme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+
+</html>
