@@ -16,11 +16,7 @@ export default async function quotesSearch(
                 `https://quote-garden.herokuapp.com/api/v3/quotes?${typeSearch}=${valueSearch}&count=${limit}&limit=${limit}`
             );
             const data = (await search.json()).data;
-            console.log(data.length);
             const dataHTML = cards(data, valueSearch);
-            console.log(
-                `https://quote-garden.herokuapp.com/api/v3/quotes?${typeSearch}=${valueSearch}&count=${limit}&limit=${limit}`
-            );
             return dataHTML;
         }
     } catch (err) {
