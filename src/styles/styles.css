@@ -293,7 +293,17 @@ a {
     transition: all 0.25s ease;
 }
 
+@media (max-width: 582px) {
+    .main-form button {
+        font-size: 13px;
+    }
+}
+
 @media (max-width: 450px) {
+     ::-webkit-input-placeholder {
+        transform: translateX(-15px);
+        font-size: 10px;
+    }
     .theme-switch {
         translate: 90deg;
         top: 125px;
@@ -302,7 +312,19 @@ a {
         margin: auto;
         transform: rotate(90deg);
     }
-    h2 {
+    .navbar h2 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 280px) {
+    .navbar h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 180px) {
+    .navbar h2 {
         font-size: 16px;
     }
 }
