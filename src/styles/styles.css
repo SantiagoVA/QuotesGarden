@@ -34,20 +34,6 @@ body {
     transition: 0.25s all ease;
 }
 
-::-webkit-scrollbar-thumb {
-    background: rgb(255, 0, 0);
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #b3b3b3;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-::-webkit-scrollbar-thumb:active {
-    background-color: #999999;
-}
-
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
