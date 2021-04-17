@@ -6,7 +6,6 @@ export default async function searchAll(valueSearch, limit) {
     const kindOfSearch = ['query', 'author', 'genre'];
 
     for (let element of kindOfSearch) {
-        console.log(element)
         const search = await fetch(
             `https://quote-garden.herokuapp.com/api/v3/quotes?${element}=${valueSearch}&count=${limitDivided}&limit=${limitDivided}`
         );
